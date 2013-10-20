@@ -1,0 +1,626 @@
+/* app/assets/stylesheets/store/touzine.css */
+
+@import url("http://fonts.googleapis.com/css?family=PT+Sans|Italiana");
+
+/* Remove the left column with categories & brands */
+
+nav#taxonomies {
+    position: absolute;
+    left: -9999px;
+}
+
+
+/* Align the Footer in the center */
+
+footer#footer {
+	text-align:center;
+}
+
+div#footer-left {
+	width:0;
+}
+
+div#footer-right {
+	width:100%;
+}
+
+/* List the Footer links inline */
+
+div#footer-right ul {
+	list-style: none;
+	margin-top: 25px;
+	padding-left: 0;
+}
+
+div#footer-right li {
+display: inline;
+margin-right:15px;
+}
+
+div#footer-right li a{
+margin-left:15px;
+}
+
+div#footer-right li:first-child:before {
+	content: '';
+}
+
+div#footer-right li:before {
+content: ' · ';
+font-size:x-large;
+}
+
+/* Style footer font */
+#footer-pages{font-size:larger;}
+
+/* Style the copyrighted "Touzine" */
+div#footer-left .copyright {
+	margin-top:0px;
+	padding-top:0px;
+}
+
+/* Style the forms in Contact Us */
+#new_contact_us_contact input[type=email], 
+#new_contact_us_contact textarea,
+#new_spree_user input[type="email"],
+#new_spree_user input[type="password"]{
+	width:450px;
+	margin: 15px 0 0;
+	background: #fff;
+	border: 4px solid #fff;
+	position: relative;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	-o-border-radius: 4px;
+	border-radius: 4px;
+	-webkit-box-shadow: 0 1px 4px rgba(0,0,0,.2);
+	-moz-box-shadow: 0 1px 4px rgba(0,0,0,.2);
+	-o-box-shadow: 0 1px 4px rgba(0,0,0,.2);
+	box-shadow: 0 1px 4px rgba(0,0,0,.2);
+	zoom: 1;
+}
+
+#new_contact_us_contact input[type=email]:focus, 
+#new_contact_us_contact textarea:focus,
+#new_spree_user input[type="email"]:focus,
+#new_spree_user input[type="password"]:focus {
+  box-shadow: 0 0 5px rgba(0,0,0,.5);
+}
+
+#new_contact_us_contact textarea {
+	height:82px;
+}
+
+a {
+  text-decoration: none;
+  color: #303030; 
+}  
+a:hover {
+  color: #707070; 
+}
+a:active, a:focus {
+  outline: none; 
+}
+
+nav #main-nav-bar li#link-to-cart a {
+  font-weight: normal;
+  font-size: 16px;
+  color: #303030; 
+}
+
+ul#products li .price {
+   color: #303030;
+   font-size: 16px;
+   padding-top: 5px;
+   display: block; 
+}
+
+/* Position & layout of Navigation. Prev: 340 - 580 - 940px */
+
+.container header .six.columns { width: 140px; }
+.container header .ten.columns { width: 180px; }
+.container .three.columns {width: 306px;}
+
+.container header .sixteen.columns { width:200px;} 
+header nav.columns.sixteen {width: 200px;margin-top:20px;float:right;}
+#wrapper {clear:both;}
+#top-nav-bar {float:right;}
+
+#footer { width:940px;}
+#header {border-bottom: 1px solid #d9d9db;margin:0 10px 40px 10px;}
+nav #main-nav-bar { border: none;margin-top:0px;}
+#logo {margin-top:16px;}
+#products{margin-top:50px;}
+
+
+/* Hide "Home" & "Contact Us" links in the navigation menu */
+.container #header .sixteen.columns li#home-link, 
+.container #header .sixteen.columns li.not,
+.container #header .sixteen.columns li.current{ display:none;width:0px;} 
+
+/* Initialize Flexslider settings */
+
+.flexslider { width:932px;}
+hr.subsection {
+background: transparent;
+color: transparent;
+border-left:  none;
+border-right: none;
+border-top:   none;
+border-bottom: 1px dotted #C0C0C0 ;
+margin-left:15%; margin-right:15%;
+margin-top:30px;
+background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
+background-image:    -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
+background-image:     -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
+background-image:      -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));  
+}
+.container .twelve.columns    { width: 940px; }
+.flex-caption {
+    position:absolute;
+    left:50;right:50;top:200px;
+    background:rgba(240,240,240,0.6);
+    z-index:1;padding:10px;
+	width:370px;
+}
+.flexslider .slides li {
+  position:relative;
+}
+
+/* Establish large buttons */
+
+#contact_us_contact_submit,
+#add-to-cart-button,
+#update-button,
+#checkout-link,
+#checkout_form_address input[type="submit"],
+#checkout_form_delivery input[type="submit"],
+#checkout_form_payment input[type="submit"],
+#new_spree_user input[type="submit"] {
+	display:block;
+	margin-top:18px;
+	-moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #ffffff;
+	box-shadow:inset 0px 1px 0px 0px #ffffff;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #f2e8dc), color-stop(1, #dacab6) );
+	background:-moz-linear-gradient( center top, #dacab6 5%, #dacab6 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#dacab6', endColorstr='#dacab6');
+	background-color:#dacab6;
+	-webkit-border-top-left-radius:5px;
+	-moz-border-radius-topleft:5px;
+	border-top-left-radius:5px;
+	-webkit-border-top-right-radius:5px;
+	-moz-border-radius-topright:5px;
+	border-top-right-radius:5px;
+	-webkit-border-bottom-right-radius:5px;
+	-moz-border-radius-bottomright:5px;
+	border-bottom-right-radius:5px;
+	-webkit-border-bottom-left-radius:5px;
+	-moz-border-radius-bottomleft:5px;
+	border-bottom-left-radius:5px;
+	text-indent:0;
+	border:1px solid #dcdcdc;
+	color:#3d3b3d;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	font-style:normal;
+	height:45px;
+	line-height:25px;
+	width:161px;
+	text-decoration:none;
+	text-align:center;
+	text-shadow:1px 1px 0px #ffffff;
+}
+
+#contact_us_contact_submit:hover,
+#add-to-cart-button:hover,
+#update-button:hover,
+#checkout-link:hover,
+#checkout_form_address input[type="submit"]:hover,
+#checkout_form_delivery input[type="submit"]:hover,
+#checkout_form_payment input[type="submit"]:hover,
+#new_spree_user input[type="submit"]:hover {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #f2e8dc), color-stop(1, #f2e8dc) );
+	background:-moz-linear-gradient( center top, #f2e8dc 5%, #f2e8dc 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#dacab6', endColorstr='#dacab6');
+	background-color:#f2e8dc;
+}
+#contact_us_contact_submit:active,
+#add-to-cart-button:active,
+#update-button:active,
+#checkout-link:active,
+#checkout_form_address input[type="submit"]:active,
+#checkout_form_delivery input[type="submit"]:active,
+#checkout_form_payment input[type="submit"]:active,
+#new_spree_user input[type="submit"]:active {
+	position:relative;
+	top:1px;
+}
+
+a.button{
+	background-color:gray;
+}
+input[type="submit"].gray, 
+input[type="button"].gray, input[type="reset"].gray {
+height:28px;
+}
+
+form#update-cart .sixteen.columns { 
+width: 500px;
+float:right;
+}
+
+#order_coupon_code{float:right;display:block;}
+
+
+#update-button{
+	clear:both;
+	display:block;
+	float:left;
+	margin-left:130px;
+
+}
+
+#checkout-link {
+	margin-top:20px;
+	display:block;
+	float:right;
+
+}
+
+#empty-cart {
+margin-top: -5px;
+}
+
+/* Style the headers in the subsection */
+
+header.subsection-header{text-align:center;}
+header.subsection-header h2,
+#content h1#cart-title,
+div#content h1,
+div#checkout h1,
+div#existing-customer h6{
+	text-transform:uppercase;
+	font-family: 'Italiana', serif;	
+	font-size:36px; 
+    display:inline-block;
+    transform:scale(0.7,1); /* W3C */
+    -webkit-transform:scale(0.7,1); /* Safari and Chrome */
+    -moz-transform:scale(0.7,1); /* Firefox */
+    -ms-transform:scale(0.7,1); /* IE 9 */
+    -o-transform:scale(0.7,1); /* Opera */
+}
+
+ul#products li a.info,
+#product-description h1.product-title {
+	margin-left:-12.5%;
+	text-align:center;
+	text-transform:none;
+	width:125%;
+	font-size:22px;
+	line-size:30px;
+	font-family: 'PT Sans', serif;	
+	font-weight:normal; 
+	color: #404042;
+    transform:scale(0.8,1); /* W3C */
+    -webkit-transform:scale(0.8,1); /* Safari and Chrome */
+    -moz-transform:scale(0.8,1); /* Firefox */
+    -ms-transform:scale(0.8,1); /* IE 9 */
+    -o-transform:scale(0.8,1); /* Opera */
+
+}
+
+/* Style product boxes */
+
+ul#products li .product-image,
+#product-images #main-image {
+margin: 0 0 30px;
+background: #fff;
+border: 4px solid #fff;
+position: relative;
+-webkit-border-radius: 4px;
+-moz-border-radius: 4px;
+-o-border-radius: 4px;
+border-radius: 4px;
+-webkit-box-shadow: 0 1px 4px rgba(0,0,0,.2);
+-moz-box-shadow: 0 1px 4px rgba(0,0,0,.2);
+-o-box-shadow: 0 1px 4px rgba(0,0,0,.2);
+box-shadow: 0 1px 4px rgba(0,0,0,.2);
+zoom: 1;
+}
+
+ul#products li .product-image:hover {
+	border: 4px solid #fff;
+	box-shadow: 0 1px 4px rgba(0,0,0,.4);
+}
+
+/* Style product Titles */
+
+#cart-form #inside-product-cart-form span.price{
+	color:#c3b49e;
+}
+
+nav #main-nav-bar li#link-to-cart:hover,
+nav #main-nav-bar li#link-to-cart:hover .amount,
+nav #main-nav-bar li#link-to-cart a {
+   border-color: #C3C800;
+}
+
+
+
+span.price, #checkout-summary table tr[data-hook="item_total"] td:last-child strong, 
+#checkout-summary table #summary-order-total, 
+#order_details td.price span, 
+#order_details td.total span, #order_summary td.price span, 
+#order_summary td.total span, 
+table#cart-detail tbody#line_items tr td[data-hook="cart_item_price"], 
+table#cart-detail tbody#line_items tr td[data-hook="cart_item_total"], 
+div[data-hook="inside_cart_form"] #subtotal span.order-total {
+	color: #c3b49e;
+}
+
+/* Style the Shopping Cart Titles */
+
+/*--------------------------------------*/
+/* Checkout
+/*--------------------------------------*/
+
+
+#content h1#cart-title,
+div#checkout h1,
+div#content h1,
+div#existing-customer h6 {
+	width:100%;
+	text-align:center;
+	margin-bottom: 40px;
+}
+
+#content table thead {
+background-color: #fff;
+border-top:1px solid #f2e8dc;
+border-bottom:1px solid #f2e8dc;
+margin:20px;
+}
+
+#content table thead tr th{
+height:30px;
+}
+
+table tbody tr.alt, table tbody tr.odd, table tfoot tr.alt, table tfoot tr.odd {
+background-color: #fff;
+}
+
+.progress-steps li.current-first, .progress-steps li.current {
+background-color: #C3C800;
+color: white;
+}
+
+::-moz-selection {
+  background: #C3C800;
+  color: white;
+  text-shadow: none; }
+
+::selection {
+  background: #C3C800;
+  color: white;
+  text-shadow: none; 
+}
+
+form#checkout_form_address .six.columns {
+width: 440px;
+}
+
+#billing legend, #shipping legend, #shipping_method legend, 
+#payment legend, #order_details legend, #order_summary legend {
+text-transform: uppercase;
+font-weight: bold;
+font-size: 14px;
+color: #dacab6;
+padding: 5px;
+margin-left: 15px;
+} 
+ 
+ 
+form#checkout_form_address input[type="checkbox"], 
+form#checkout_form_address label {
+text-align: right;
+display: inline-block;
+vertical-align: middle;
+width: 10em;
+margin: 0 0 0 0;
+font-size:larger;
+}
+
+span.required{margin-right: 0em;}
+
+ 
+form#checkout_form_address textarea, 
+form#checkout_form_address input, 
+form#checkout_form_address select {
+width: 200px;
+margin: 0 0 0 20px;
+background: #fff;
+border: 4px solid #fff;
+position: relative;
+-webkit-border-radius: 4px;
+-moz-border-radius: 4px;
+-o-border-radius: 4px;
+border-radius: 4px;
+-webkit-box-shadow: 0 1px 4px rgba(0,0,0,.2);
+-moz-box-shadow: 0 1px 4px rgba(0,0,0,.2);
+-o-box-shadow: 0 1px 4px rgba(0,0,0,.2);
+box-shadow: 0 1px 4px rgba(0,0,0,.2);
+zoom: 1;
+} 
+
+form#checkout_form_address textarea:focus, 
+form#checkout_form_address input:focus, 
+form#checkout_form_address select:focus  {
+  box-shadow: 0 0 5px rgba(0,0,0,.5);
+}
+
+form#checkout_form_address input#order_bill_address_attributes_address2,
+form#checkout_form_address input#order_ship_address_attributes_address2{
+	margin: 0 0 0 27px;
+}
+
+p[data-hook="use_billing"]{
+	width:440px;
+}
+form#checkout_form_address input[type=checkbox]{
+	box-shadow:none;
+	width:auto;
+	margin:25px 20px 20px 0;
+} 
+
+form#checkout_form_address label#use_billing {
+text-align: left;
+margin: 25px 100px 20px 0;
+}
+
+form#checkout_form_address input[type="submit"]{
+	margin-left:155px;
+}
+#checkout-summary {
+	float:right;
+}
+
+#shipping_method .stock-location {
+	background-color: #fff;
+	border-top: 1px solid #f2e8dc;
+	border-bottom: 1px solid #f2e8dc;
+	height:30px;
+	margin-top:20px;
+	padding:5px 0 5px 0;
+	color:black;
+	vertical-align:center;
+}
+
+#shipping_method .shipping-methods .shipping-method label .rate-cost {
+color: #dacab6;
+}
+
+#checkout_form_delivery input[type="submit"],
+#checkout_form_payment input[type="submit"]{
+	float:right;
+}
+
+#checkout a:link {
+  -webkit-tap-highlight-color: #C3C800; 
+}
+
+.progress-steps li.completed-first:hover, .progress-steps li.completed:hover {
+background-color: #C3C800;
+color: white; }
+
+#methods .shipment table {
+	width:100%;
+}
+
+#shipping_method table.stock-contents thead th {
+	font-weight:bold;
+}
+
+#shipping_method table.stock-contents thead {
+background-color: #fcfaf8;
+}
+
+#shipping_method .stock-shipping-method-title {
+background-color: #fcfaf8;
+font-weight: bold;
+font-size: 12px;
+height:30px;padding:7px 0 5px;
+border-bottom:1px solid #f2e8dc;
+}
+
+#shipping_method .shipping-methods .shipping-method{
+	margin:15px 10px 5px 0;
+}
+
+table#line-items thead{
+	border:1px solid #f2e8dc;
+}
+
+/* Style the About Touzine.com page */
+
+/*--------------------------------------*/
+/* About Touzine.com
+/*--------------------------------------*/
+
+.location {
+background: url("/assets/store/morocco-map.png") right top no-repeat #fff;
+}
+
+.family .interior{
+	width:100%;
+background: url("/assets/store/touzine-tree.png") left center no-repeat #fff;
+height:340px;margin-top:50px;
+}
+
+.left {
+	width: 400px; height:327px;
+	font-size:larger;padding-top:30px;line-height:150%;
+}
+
+.right {
+	margin-left:540px;
+	width: 400px; height:327px;
+	font-size:larger;line-height:150%;
+}
+
+/* Style the Our Products & Promises page */
+
+/*--------------------------------------*/
+/* Our Products & Promises
+/*--------------------------------------*/
+
+.products p,
+.info p {
+	font-size:larger;line-height:150%;
+}
+
+.products .third,
+.info .third{
+	width: 31%;
+	padding: 0;
+	margin: 10px 1% 10px 1%;
+	float: left;
+	text-align:center;
+}
+
+.products h3{
+	font-size:larger;
+}
+
+.products .clear,
+.info .clear{
+	clear:both;
+	height:20px;
+}
+
+.family .interior{
+	width:100%;
+background: url("/assets/store/touzine-tree.png") left center no-repeat #fff;
+height:250px;margin-top:30px;
+background-size:200px;
+}
+
+.family p{
+	padding-top:50px;
+}
+
+.oil-olive .interior{
+	width:100%;
+background: url("/assets/store/oil-olive.png") center center no-repeat #fff;
+height:440px;margin-top:50px;
+}
+
+.info .interior {
+ margin-top:50px;
+}
+
+.info h3{
+	font-size:larger;
+}
+ 

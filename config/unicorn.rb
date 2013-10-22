@@ -1,4 +1,4 @@
-worker_processes 2
+worker_processes 4
 working_directory "/Users/hd/Development/touzine/"
 
 # This loads the application in the master process before forking
@@ -14,6 +14,20 @@ timeout 30
 listen "/Users/hd/Development/touzine/tmp/sockets/unicorn.sock", :backlog => 64
 
 pid "/Users/hd/Development/touzine/tmp/pids/unicorn.pid"
+
+# Production specific settings
+if env == "production"
+  # Help ensure your application will always spawn in the symlinked
+  # "current" directory that Capistrano sets up.
+  working_directory "/home/hd/touzine/current"
+
+  # feel free to point this anywhere accessible on the filesystem
+  user 'deployer', 'deployers'
+  shared_path = "/home/hd/touzine/shared"
+
+  stderr_path "#{shared_path}/log/unicorn.stderr.log"
+  stdout_path "#{shared_path}/log/unicorn.stdout.log"
+end
 
 # Set the path of the log files inside the log folder of the testapp
 stderr_path "/Users/hd/Development/touzine/log/unicorn.stderr.log"

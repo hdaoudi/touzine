@@ -33,17 +33,23 @@ Deface::Override.new(:virtual_path  => "spree/home/index",
   <ul class="slides">
     <li data-thumb="/assets/store/1.png">
       <img src="/assets/store/1.png" />
-      <p class="flex-caption">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-      Donec commodo, sapien et mattis facilisis, diam mi gravida justo, sit amet malesuada diam diam ac sapien. </p>
+      <p class="flex-caption">Taste real olive oil<br />
+       from the Moroccan Touzine area.</p>
     </li>
     <li data-thumb="/assets/store/2.png">
       <img src="/assets/store/2.png" />
+      <p class="flex-caption">Taste real olive oil<br />
+       from the Moroccan Touzine area.</p>
     </li>
     <li data-thumb="/assets/store/3.png">
       <img src="/assets/store/3.png" />
+      <p class="flex-caption">Taste real olive oil<br />
+       from the Moroccan Touzine area.</p>
     </li>
     <li data-thumb="/assets/store/4.png">
       <img src="/assets/store/4.png" />
+      <p class="flex-caption">Taste real olive oil<br />
+       from the Moroccan Touzine area.</p>
     </li>
   </ul>
 </div>

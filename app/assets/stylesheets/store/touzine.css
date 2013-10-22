@@ -63,7 +63,8 @@ div#footer-left .copyright {
 #new_contact_us_contact input[type=email], 
 #new_contact_us_contact textarea,
 #new_spree_user input[type="email"],
-#new_spree_user input[type="password"]{
+#new_spree_user input[type="password"],
+#guest_checkout input[type="email"]{
 	width:450px;
 	margin: 15px 0 0;
 	background: #fff;
@@ -83,7 +84,8 @@ div#footer-left .copyright {
 #new_contact_us_contact input[type=email]:focus, 
 #new_contact_us_contact textarea:focus,
 #new_spree_user input[type="email"]:focus,
-#new_spree_user input[type="password"]:focus {
+#new_spree_user input[type="password"]:focus,
+#guest_checkout input[type="email"]:focus {
   box-shadow: 0 0 5px rgba(0,0,0,.5);
 }
 
@@ -109,7 +111,7 @@ nav #main-nav-bar li#link-to-cart a {
 }
 
 ul#products li .price {
-   color: #303030;
+   color: #c3b49e;
    font-size: 16px;
    padding-top: 5px;
    display: block; 
@@ -162,6 +164,10 @@ background-image:      -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75),
     background:rgba(240,240,240,0.6);
     z-index:1;padding:10px;
 	width:370px;
+	font-size:x-large;
+	text-align:right;
+	line-height: 120%;
+	padding-right:15px;
 }
 .flexslider .slides li {
   position:relative;
@@ -176,7 +182,8 @@ background-image:      -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75),
 #checkout_form_address input[type="submit"],
 #checkout_form_delivery input[type="submit"],
 #checkout_form_payment input[type="submit"],
-#new_spree_user input[type="submit"] {
+#new_spree_user input[type="submit"],
+#guest_checkout input[type="submit"] {
 	display:block;
 	margin-top:18px;
 	-moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
@@ -220,7 +227,8 @@ background-image:      -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75),
 #checkout_form_address input[type="submit"]:hover,
 #checkout_form_delivery input[type="submit"]:hover,
 #checkout_form_payment input[type="submit"]:hover,
-#new_spree_user input[type="submit"]:hover {
+#new_spree_user input[type="submit"]:hover,
+#guest_checkout input[type="submit"]:hover {
 	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #f2e8dc), color-stop(1, #f2e8dc) );
 	background:-moz-linear-gradient( center top, #f2e8dc 5%, #f2e8dc 100% );
 	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#dacab6', endColorstr='#dacab6');
@@ -233,7 +241,8 @@ background-image:      -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75),
 #checkout_form_address input[type="submit"]:active,
 #checkout_form_delivery input[type="submit"]:active,
 #checkout_form_payment input[type="submit"]:active,
-#new_spree_user input[type="submit"]:active {
+#new_spree_user input[type="submit"]:active,
+#guest_checkout input[type="submit"]:active {
 	position:relative;
 	top:1px;
 }
@@ -623,4 +632,38 @@ height:440px;margin-top:50px;
 .info h3{
 	font-size:larger;
 }
- 
+
+/* Style the Registration page */
+
+/*--------------------------------------*/
+/* Registration
+/*--------------------------------------*/
+
+#registration #account #existing-customer h6,
+#registration #guest_checkout h6{
+	margin-left:-12.5%;
+	text-align:center;
+	text-transform:none;
+	width:125%;
+	font-size:22px;
+	line-size:30px;
+	font-family: 'PT Sans', serif;	
+	font-weight:normal; 
+	color: #404042;
+    transform:scale(0.8,1); /* W3C */
+    -webkit-transform:scale(0.8,1); /* Safari and Chrome */
+    -moz-transform:scale(0.8,1); /* Firefox */
+    -ms-transform:scale(0.8,1); /* IE 9 */
+    -o-transform:scale(0.8,1); /* Opera */
+	margin-bottom:0px;
+	
+}
+
+#registration #existing-customer {
+}
+
+#registration #account input[type="email"],
+#registration #account input[type="password"],
+#registration #guest_checkout input[type="email"]{
+	width:300px;
+}

@@ -1,7 +1,6 @@
 env = ENV["RAILS_ENV"] || "development"
 
 worker_processes 4
-working_directory "/Users/hd/Development/touzine/"
 
 # This loads the application in the master process before forking
 # worker processes

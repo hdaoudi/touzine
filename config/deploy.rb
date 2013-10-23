@@ -29,7 +29,7 @@ set :application, "touzine"
 
 set :scm,             :git
 set :repository,      "git@github.com:hdaoudi/touzine.git"
-set :branch,          "master"
+set :branch,          "origin/master"
 set :migrate_target,  :current
 set :ssh_options,     { :forward_agent => true }
 set :rails_env,       "production"

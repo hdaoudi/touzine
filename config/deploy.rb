@@ -38,7 +38,7 @@ set :deploy_via, :remote_cache
 set :normalize_asset_timestamps, false
 
 set :user,            "deployer"
-set :group,           "deployers"
+set :group,           "staff"
 set :use_sudo,        false
 
 role :web,    "touzine.com"

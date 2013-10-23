@@ -17,6 +17,7 @@ end
 
 group :development do
     gem 'capistrano'
+    gem 'unicorn'
 end
 
 gem 'spree', '2.1.1'

@@ -128,7 +128,7 @@ namespace :deploy do
 
   desc "Zero-downtime restart of Unicorn"
   task :restart, :except => { :no_release => true } do
-    run "kill -s QUIT `cat /tmp/pids/unicorn.pid`"
+    run "kill -s QUIT `cat /tmp/pids/unicorn.pid` ; bundle exec unicorn_rails -c config/unicorn.rb -D"
   end
 
   desc "Start unicorn"

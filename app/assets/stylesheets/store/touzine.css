@@ -2,6 +2,7 @@
 
 @import url(//fonts.googleapis.com/css?family=PT+Sans|Italiana);
 
+
 /* Remove the left column with categories & brands */
 
 nav#taxonomies {
@@ -21,7 +22,7 @@ div#footer-left {
 }
 
 div#footer-right {
-	width:100%;
+	width:960px;
 }
 
 /* List the Footer links inline */
@@ -125,11 +126,11 @@ ul#products li .price {
 
 .container header .sixteen.columns { width:200px;} 
 header nav.columns.sixteen {width: 200px;margin-top:20px;float:right;}
-#wrapper {clear:both;}
+#wrapper {clear:both;width:960px;}
 #top-nav-bar {float:right;}
 
 #footer { width:940px;}
-#header {border-bottom: 1px solid #d9d9db;margin:0 10px 40px 10px;}
+#header {border-bottom: 1px solid #d9d9db;margin:0 10px 40px 10px;width: 932px;}
 nav #main-nav-bar { border: none;margin-top:0px;}
 #logo {margin-top:16px;}
 #products{margin-top:50px;}
@@ -321,6 +322,14 @@ ul#products li a.info,
 }
 
 /* Style product boxes */
+
+ul#products li {
+width: 306px;
+}
+
+ul#products li.secondary{
+margin-left: 10px;
+}
 
 ul#products li .product-image,
 #product-images #main-image {
@@ -667,3 +676,4 @@ height:440px;margin-top:50px;
 #registration #guest_checkout input[type="email"]{
 	width:300px;
 }
+
